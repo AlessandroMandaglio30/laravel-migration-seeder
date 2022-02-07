@@ -18,7 +18,7 @@ class CreateTravelsTable extends Migration
             $table->string("departure", 50);
             $table->string("destination", 50);
             $table->date('return_date');
-            $table->tinyInteger('people_nr', 4);
+            $table->integer('people_nr');
             $table->float('price', 8, 2);
             $table->date('departure_date');
             $table->timestamps();
